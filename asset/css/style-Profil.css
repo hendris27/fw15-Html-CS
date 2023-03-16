@@ -76,13 +76,14 @@ main .side-content{
 main .main-content{
     background-color:#fffF;
     width: 70%;
-    height: 83%;
+    height: 926px;
     margin-top: 150px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 20px;
+    gap: 0px;
 }
 
 /* // styling page profil-mybooking */
