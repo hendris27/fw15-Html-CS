@@ -10,7 +10,7 @@
     display: flex;
     height: 120vh;
     flex-direction: column;
-    background-color: #F4F7FF;
+    background-color: #F1F1F1;
 
 }
 header{
@@ -30,7 +30,7 @@ header{
     flex-direction: row;
 }ul .list-menu
 {
-float: left; 
+
 display: inline-block; 
 margin: 10px;
 font-family: 'Poppins', sans-serif;
@@ -43,8 +43,8 @@ border-bottom: 2px solid transparent;
 
 }
 ul .list-menu:hover{
-    color: blue;
-    border-bottom: 3px solid blue;
+    color:#0E8388;
+    border-bottom: 3px solid #0E8388;
 }
 .login{
     display: flex;
@@ -52,7 +52,7 @@ ul .list-menu:hover{
 
 .login-text1{
     font-size: 14px;
-    color: #1b47c0;
+    color: #0E8388;
     font-weight: 600;
     margin-top: 35px;
 }
@@ -60,14 +60,14 @@ ul .list-menu:hover{
     margin-bottom: 30px;
 }
 .btn-signup{
-    background-color: rgba(34 86 255 / 92%);
+    background-color: #0E8388;
     width: 160px;
     height: 40px;
     padding: 0 20px;
     align-self: center;
     border-radius: 10px;
     margin-top: 25px;
-    color: white;
+    color: black;
     font-size: 14px;
     font-weight: 600;
     
@@ -77,7 +77,7 @@ ul .list-menu:hover{
 main{
     display: flex;
     justify-content:center ;
-    background-color: white;
+    background-color: #F1F1F1;
     flex-direction: column;     
     flex: 1;
     
@@ -85,14 +85,15 @@ main{
 }
 .main-content{
 
-    background: rgba(45, 205, 205, 0.452);
+    background: #0E8388;
     width: 100%;
     height: 750px;
     margin-top: 90px;
     display: flex;
     padding-left: 100px;
     justify-content: flex-end;
-    background-image: url(./asset/png/layer.png);
+    background-image: 
+    url("../png/layer.png");
     background-repeat: no-repeat;
     background-size: cover;
         
@@ -156,7 +157,7 @@ main .main-content3 .baner > .baner1{
     position: absolute;
     flex-direction: column;
     bottom: 0;
-    color: white;
+    color: #F1F1F1;
     background: rgb(8,7,27);
     background: linear-gradient(0deg, rgba(8,7,27,0.9500175070028011) 0%, rgba(2,2,24,0.3925945378151261) 15%);
     width: 100%;
@@ -182,8 +183,8 @@ main .main-content2 .date{
     justify-content: center;
 }
 main .main-content2 .date:hover{
-    border: 1px solid #FF8900;
-    color:#FF8900 ;
+    border: 1px solid #0E8388;
+    color:#0E8388 ;
     line-height: 35px;
 
 }
@@ -192,7 +193,7 @@ div > img{
     align-self: center;
 }
 main .main-content2{
-    background-color:#FFFFFF;
+    background-color:#F1F1F1;
     width: 100%;
     height: 260px;
     display: flex;
@@ -216,7 +217,7 @@ main .main-content2{
 
 }
 main .main-content3{
-    background-color:#FFFFFF;
+    background-color:#F1F1F1;
     width: 100%;
     height: 650px;
     display: flex;
@@ -270,11 +271,11 @@ div .btn-arrow{
    
 }
 .arrow-left:hover{
-    background-color: #3366FF; color: white;
+    background-color: #0E8388; color: white;
 
 }
 .arrow-right:hover{
-    background-color: #3366FF;  color: white;
+    background-color: #0E8388;  color: white;
 }
 /* ------------------------------- */
 /* star styling main-content4 */
@@ -288,33 +289,24 @@ main .main-content4{
     align-items: center;
     border-radius: 50px;
     align-self: center;
-    position: relative;
     overflow: hidden;
-    background-image: linear-gradient(rgb(148, 184, 214), rgba(0, 119, 255, 0.5)), 
-    url("/meet1/asset/png/layer4.png");
+    background: #0E8388;
+    background-image: 
+    url("../png/layer4.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
     padding-left: 68px;
     padding-right: 68px;
 }
-main .main-content4 .layer-content4{
-    width: 110%;
-    height: 110%;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    
-}
+
 .layer-content > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 .btn-location{
-    background: rgba(255, 255, 255, 0.25);
+    background: #0E8388;
     border-radius: 30px;
     width: 160px;
     height: 30px;
@@ -323,7 +315,7 @@ main .main-content4 .layer-content4{
     margin-top: 74px;
     font-size: 12px;
     font-weight: 600;
-    color: #F4F7FF;
+    color: black;
     margin-left: 20px;
 
 }
@@ -334,7 +326,7 @@ main .main-content4 .layer-content4{
 /* star styling main-content5 */
 
 main .main-content5{
-    background-color:white;
+    background-color:#F1F1F1;
     width: 100%;
     height: 980px;
     display: flex;
@@ -343,25 +335,7 @@ main .main-content5{
     
 }
 
-.bo{
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    bottom: 0;
-    color: white;
-    background: rgb(8,7,27);
-    background: linear-gradient(0deg, rgba(8,7,27,0.9500175070028011) 0%, rgba(2,2,24,0.3925945378151261) 15%);
-    width: 100%;
-    font-size: 22px;
-    font-style: bold;
-    line-height: 18px;
-    padding:20px;
-    padding-bottom: 50px;
-    gap: 7px;
-    letter-spacing: 2px;
-    line-height: 30px;
 
-}
 .main-content5 .btn-category{
     color: rgba(255, 61, 113, 1);
     background: rgba(255, 61, 113, 0.25);
@@ -394,7 +368,7 @@ main .main-content5{
 /* batas styling main */
 
 footer{
-    background-color:  #F4F7FF;
+    background-color:  #F1F1F1;
     width:100%;
     height: 450px;
     display: flex;
@@ -409,7 +383,7 @@ footer > .section-top{
     display: flex;
     justify-content: space-around;
     width: 80%;
-    background-color: #F4F7FF;
+    background-color: #F1F1F1;
     
 }
 .section-top .social-media{
@@ -421,7 +395,7 @@ footer > .section-top{
 div .section-bottom{
     display: flex;
     width: 100%;
-    background-color: #F4F7FF;
+    background-color: #F1F1F1;
     padding-top: 100px;
     flex: 1;
    
@@ -433,7 +407,7 @@ div .section-bottom .copyright{
     color: #5A7184;
     font-size: 16px;
     justify-content: center;
-    background-color: #F4F7FF;
+    background-color: #F1F1F1;
     flex: 1;
 }
 div .other-title{
@@ -476,25 +450,25 @@ div .other-title:hover{
     
 }
 .baner-bottom .baner-a1{
-    background-color:none;
+    background-color:rgb(239, 236, 241);
     height: 175px;
-    background-image: url(/meet1/asset/png/baner1.png);
+    background-image: url(/asset/png/baner1.png);
     background-position: right 50% bottom 50%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .baner-bottom .baner-b1{
-    background-color:none;
+    background-color:rgb(239, 236, 241);
     height: 175px;
-    background-image: url(/meet1/asset/png/baner2.png);
+    background-image: url(/asset/png/baner2.png);
     background-position: right 50% bottom 50%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .baner-bottom .baner-c1{
-    background-color:none;
+    background-color:rgb(239, 236, 241);
     height: 175px;
-    background-image: url(/meet1/asset/png/baner1.png);
+    background-image: url(/asset/png/baner1.png);
     background-position: right 50% bottom 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -504,7 +478,7 @@ div .other-title:hover{
 
 .baner-bottom .baner-b{
     flex: 1;
-    background: #3366FF;
+    background: #0E8388;
 
 }
 .title-baner-1 .text1{
@@ -551,7 +525,7 @@ div .other-title:hover{
 
 }
 main .main-content6{
-    background: rgba(1, 15, 15, 0.836);
+    background: #012b2c;
     background-image: 
     url("../png/layer5.png");
      background-repeat: no-repeat;

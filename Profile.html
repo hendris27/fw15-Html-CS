@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="container1">
-      <header class="header">
+      <header class="header p-[50px]">
         <div class="logo">
           <img src="./asset/png/nav-logo.png" alt="nav-logo" />
         </div>
@@ -21,51 +21,57 @@
           <nav class="nav-menu">
             <ul>
               <li class="list-menu"><a href="index.html" style="text-decoration: none;" >Home </a></li></a>  </li>
-              <li class="list-menu">Create Event</li>
-              <li class="list-menu">Location</li>
+              <li class="list-menu"><a href="see-create-event.html">Create Event</a></li>
+              <li class="list-menu"><a href="#"></a>Location</li>
             </ul>
           </nav>
         </div>
         
+       <a href="Profile.html">
         <div class="profil">
-            <div class="logo-avatar">
-                <img src="./asset/svg/avatar.svg" alt="avatar" />
+          <div class="logo-avatar">
+              <img src="./asset/svg/avatar.svg" alt="avatar" />
+            </div>
+            <div class="username">
+                Jhon Thomson
               </div>
-              <div class="username">
-                  Jhon Thomson
-                </div>
-        </div>
+      </div>
+       </a>
       </header>
       <main>
         <div class="side-content">
+          <a href="Profile.html">
           <div class="flex ml-16 gap-4 mb-14">
-            <div>
-              <img src="./asset/svg/avatar.svg" alt="avatar-profil">
-            </div>
-            <div> Jhon Thomson
-             </br> <label>Entreprenur, ID</label>
-            </div>
-            
+          <div>
+            <img src="./asset/svg/avatar.svg" alt="avatar-profil">
           </div>
+          <div> Jhon Thomson
+           </br> <label>Entreprenur, ID</label>
+          </div>
+          
+        </div>
+         </a>
+        <a href="Profile.html">
           <div class="flex ml-16 gap-4 mt-10">
-         <div>
-            <a href="Profile.html">
-              <img src="./asset/png/s-profil.png" alt="icon-profil">
-            </a>
-            </div>
-            <div> <a href="Profile.html">Profile</a></div>
-          </div>
+            <div>
+               <a href="Profile.html">
+                 <img src="./asset/png/s-profil.png" alt="icon-profil">
+               </a>
+               </div>
+               <div class="hover:text-[#0E8388] "> <a href="Profile.html">Profile</a></div>
+             </div>
+        </a>
           <div class="flex ml-[100px] gap-4 mt-10">
             <div>
               <img src="./asset/png/s-card.png" alt="icon-card">
             </div>
-            <div>Card</div>
+            <div class="hover:text-[#0E8388] ">Card</div>
           </div>
           <div class="flex ml-[100px] gap-4 mt-10">
             <div >
               <img src="./asset/png/s-edit-filled.png" alt="icon-edit-fill">
             </div>
-            <div>Edit profile</div>
+            <div class="hover:text-[#0E8388] ">Edit profile</div>
           </div>
           <div class="flex ml-[100px] gap-4 mt-10" >
             <div>
@@ -73,18 +79,18 @@
             </div>
          
           <a href="change-password.html">
-            <div>Change Password</div>
+            <div class="hover:text-[#0E8388] ">Change Password</div>
           </a>
           </div>
 
           <div class="flex ml-16 gap-4 mt-10">
-            <a href="create-event.html">
+            <a href="see-create-event.html">
                 <div>
                     <img src="./asset/png/s-create-event.png" alt="icon-task-list">
                   </div>
             </a>
-          <a href="create-event.html">
-            <div class="hover:text-[blue] ">Create Event</div>
+          <a href="see-create-event.html">
+            <div class="hover:text-[#0E8388] ">Create Event</div>
         </a>
         </div>
 
@@ -96,7 +102,7 @@
                   </div>
             </a>
           <a href="my-booking.html">
-            <div class="hover:text-[blue] ">My Booking</div>
+            <div class="hover:text-[#0E8388] ">My Booking</div>
           </a>
         </div>
         
@@ -108,20 +114,22 @@
             </div>
            </a>
           <a href="my-wishlist.html">
-              <div>My Listwish</div>
+              <div class="hover:text-[#0E8388] ">My Listwish</div>
           </a>
           </div>
-          <div class="flex ml-16 gap-4 mt-10">
-            <div>
-              <img src="./asset/png/s-settings.png" alt="icon-setting">
+          <a href="#">
+            <div class="flex ml-16 gap-4 mt-10">
+              <div>
+                <img src="./asset/png/s-settings.png" alt="icon-setting">
+              </div>
+              <div class="hover:text-[#0E8388] ">setting</div>
             </div>
-            <div>setting</div>
-          </div>
+          </a>
           <div class="flex ml-16 gap-4 mt-10">
             <div>
               <img src="./asset/png/s-logout.png" alt="icon-logout">
             </div>
-            <div>Logout</div>
+            <div class="text-red-600">Logout</div>
           </div>
          
         </div>
@@ -144,19 +152,19 @@
                         </div>
                         <div class="flex flex-col gap-[50px]">
                             <div>
-                                <input  class="border-[1px] border-[#C1C5D0] outline-0 border-1 h-[55px] w-[315px] rounded-xl p-2 mt-[-40px]" type="text" placeholder="Jhon Tomson">
+                                <input  class="border-[1px] hover:border-[#0E8388] border-[#C1C5D0] outline-0 border-1 h-[55px] w-[315px] rounded-xl p-2 mt-[-40px]" type="text" placeholder="Jhon Tomson">
                             </div>
                             <div class="flex gap-4">
                                 <div class="text-[#777777] text-sm leading-[21px] tracking-[1px]">@jhont0</div>
-                                <div class="text-[#3366FF] text-sm leading-[21px] tracking-[1px] border-b-2 border-[#3366FF]"><a href="#"> Edit</a></div>
+                                <div class="hover:border-[#0E8388] hover:text-[#0E8388] text-[#3366FF] text-sm leading-[21px] tracking-[1px] border-b-2 border-[#3366FF]"><a href="#"> Edit</a></div>
                             </div>
                             <div class="flex gap-4">
                                 <div class="text-[#777777] text-sm leading-[21px] tracking-[1px]">jhont0@mail.com</div>
-                                <div class="text-[#3366FF] text-sm leading-[21px] tracking-[1px] border-b-2 border-[#3366FF]"><a href="#"> Edit</a></div>
+                                <div class="hover:border-[#0E8388] hover:text-[#0E8388] text-[#3366FF] text-sm leading-[21px] tracking-[1px] border-b-2 border-[#3366FF]"><a href="#"> Edit</a></div>
                             </div>
                             <div class="flex gap-4">
                                 <div class="text-[#777777] text-sm leading-[21px] tracking-[1px]">081234567890</div>
-                                <div class="text-[#3366FF] text-sm leading-[21px] tracking-[1px] border-b-2 border-[#3366FF]"><a href="#"> Edit</a></div>
+                                <div class="hover:border-[#0E8388] hover:text-[#0E8388] text-[#3366FF] text-sm leading-[21px] tracking-[1px] border-b-2 border-[#3366FF]"><a href="#"> Edit</a></div>
                             </div>
                            
                             <div class="flex gap-4">
@@ -164,13 +172,13 @@
                                 <div><input type="radio">&nbsp; Female</div>
                             </div>
                             <div class="w-[315px]">
-                                <select class="border-[1px] border-[#C1C5D0] w-[315px] h-[55px] outline-0 rounded-xl px-4" name="Prefession" id="Prefession">
+                                <select class="border-[1px] hover:border-[#0E8388] border-[#C1C5D0] w-[315px] h-[55px] outline-0 rounded-xl px-4" name="Prefession" id="Prefession">
                                     <option value="Entreprenur">Entreprenur</option>
                                     <option value="Student">Student</option>
                                 </select>
                             </div>
                             <div class="w-[315px]">
-                                <select class="border-[1px] border-[#C1C5D0]  w-[315px] h-[55px] outline-0 rounded-xl px-4" name="Nationality" id="Nationality">
+                                <select class="border-[1px] hover:border-[#0E8388] border-[#C1C5D0]  w-[315px] h-[55px] outline-0 rounded-xl px-4" name="Nationality" id="Nationality">
                                     <option value="Indonesia">Indonesia</option>
                                     <option value="Singapura">Singapura</option>
                                 </select>
@@ -183,10 +191,10 @@
                         <div>Birthday Date</div>
                         <div class="flex gap-4">
                             <div><input class="appearance-none outline-0" type="date"></div>
-                            <div class="text-[#3366FF] text-sm leading-[21px] tracking-[1px] border-b-2 border-[#3366FF]"><a href="#"> Edit</a></div>
+                            <div class="text-[#3366FF] hover:border-[#0E8388] hover:text-[#0E8388] text-sm leading-[21px] tracking-[1px] border-b-2 border-[#3366FF]"><a href="#"> Edit</a></div>
                         </div>
                     </div>
-                    <div class="mt-[50px]"><button class="w-full h-[55px] bg-red-300 text-white rounded-xl">Save</button></div>
+                    <div class="mt-[50px]"><button class="w-full h-[55px] bg-[#0E8388] hover:text-black text-white rounded-xl">Save</button></div>
                     
                    </div>
                   </div>
@@ -200,7 +208,7 @@
             <img src="./asset/png/profile-change.png" alt="">
         </div>
         <div>
-            <div class="flex items-center justify-center text-[#3366FF] h-[40px] w-[255px] rounded-[10px] border-[1px] border-[#3366FF]">Choose Photo</div>
+            <div class="flex items-center justify-center hover:text-[#0E8388] text-[black] h-[40px] w-[255px] rounded-[10px] border-[1px] hover:border-[#0E8388] border-[black]">Choose Photo</div>
         </div>
         <div>
             <label  class="text-xs text-[#373A42

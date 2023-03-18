@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="container1">
-      <header class="header">
+      <header class="header p-[50px]">
         <div class="logo">
           <img src="./asset/png/nav-logo.png" alt="nav-logo" />
         </div>
@@ -27,7 +27,8 @@
           </nav>
         </div>
         
-        <div class="profil">
+        <a href="Profile.html">
+          <div class="profil">
             <div class="logo-avatar">
                 <img src="./asset/svg/avatar.svg" alt="avatar" />
               </div>
@@ -35,9 +36,11 @@
                   Jhon Thomson
                 </div>
         </div>
+        </a>
       </header>
       <main>
         <div class="side-content">
+         <a href="Profile.html">
           <div class="flex ml-16 gap-4 mb-14">
             <div>
               <img src="./asset/svg/avatar.svg" alt="avatar-profil">
@@ -47,12 +50,15 @@
             </div>
             
           </div>
+         </a>
+         <a href="Profile.html">
           <div class="flex ml-16 gap-4 mt-10">
-         <div>
-              <img src="./asset/png/s-profil.png" alt="icon-profil">
-            </div>
-            <div> Profile</div>
-          </div>
+            <div>
+                 <img src="./asset/png/s-profil.png" alt="icon-profil">
+               </div>
+               <div> Profile</div>
+             </div>
+         </a>
           <div class="flex ml-[100px] gap-4 mt-10">
             <div>
               <img src="./asset/png/s-card.png" alt="icon-card">
@@ -66,10 +72,12 @@
             <div>Edit profile</div>
           </div>
           <div class="flex ml-[100px] gap-4 mt-10" >
-            <div>
-              <img src="./asset/png/s-open-lock.png" alt="icon-change-password">
-            </div>
-         
+            <a href="change-password.html">
+              <div>
+                <img src="./asset/png/s-open-lock.png" alt="icon-change-password">
+              </div>
+           
+            </a>
           <a href="change-password.html">
             <div>Change Password</div>
           </a>
@@ -94,27 +102,29 @@
               <div>My Listwish</div>
           </a>
           </div>
-          <div class="flex ml-16 gap-4 mt-10">
-            <div>
-              <img src="./asset/png/s-settings.png" alt="icon-setting">
+          <a href="#">
+            <div class="flex ml-16 gap-4 mt-10">
+              <div>
+                <img src="./asset/png/s-settings.png" alt="icon-setting">
+              </div>
+              <div>setting</div>
             </div>
-            <div>setting</div>
-          </div>
+          </a>
           <div class="flex ml-16 gap-4 mt-10">
             <div>
               <img src="./asset/png/s-logout.png" alt="icon-logout">
             </div>
-            <div>Logout</div>
+            <div class="text-red-600">Logout</div>
           </div>
          
         </div>
         <div class="main-content">
             <div class="t-book">
                 <div class="mt-8  text-xl font-bold">Manage Event</div>
-               <div class="flex gap-4 h-[50px] w-[125px] border border[rgba(234, 241, 255, 1) rounded-2xl 
-               justify-center items-center content-center mt-8 bg-[#EAF1FF]">  
+               <div class="flex gap-4 h-[50px] w-[125px] border border[rgba(234, 241, 255, 1) rounded-[20px] 
+               justify-center items-center content-center mt-8 bg-[#9ED5C5] hover:bg-[#0E8388] cursor-auto">  
               
-                <div class="text-[#3366FF] text-xs" >Create</div>       
+                <div class="text-[black] hover:text-[white] text-xs" >Create</div>       
               </div>
                </div>
            <div class="flex gap-36 self-start mt-[53px] ml-[60px] border-b-2 w-[824px] p-6">
@@ -130,7 +140,7 @@
                 <div class="text-[12px] mt-4]"> Jakarta, Indonesia</div>
                 <div class="text-[12px]">Wed, 15 Nov, 4:00 PM</div>
                 <div>
-                    <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Detail</div>
+                    <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5 hover::after:top-[100%] ">Detail</div>
                     <a href=""> <div class="inline-block  p-4 text-[12px] text-[#3366FF] mt-2.5">Update</div>
                      <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Delete</div>
                      </a>
