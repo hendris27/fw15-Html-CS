@@ -43,7 +43,7 @@ border-bottom: 2px solid transparent;
 }
 ul .list-menu:hover{
     color: #F1F1F1;
-    border-bottom-color: #F1F1F1;
+    border-bottom-color: rgb(92, 22, 65);
 }
 .profil{
     display: flex;
@@ -87,7 +87,7 @@ main .main-content{
 }
 
 /* // styling page profil-mybooking */
-.main-content .t-book{
+.t-book{
     display: flex;
     justify-content: space-between;
     flex-direction: row;

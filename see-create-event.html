@@ -9,11 +9,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/css/style-Profil.css" />
+    <link rel="stylesheet" href="./asset/css/style-create-event.css" />
     <title>see-create-event</title>
+
   </head>
+  <script>
+    const addTask = document.getElementById("update-data");
+const subaddTask = document.getElementById("form-update-data");
+addTask.addEventListener("click", function () {
+  if (subaddTask.style.display === "block") {
+    subaddTask.style.display = "none";
+  } else {
+    subaddTask.style.display = "block";
+  }
+});
+  </script>
   <body>
+    
     <div class="container1">
-      <header class="header p-[50px]">
+        
+      <header class="header p-[50px] z-10">
         <div class="logo">
           <img src="./asset/png/nav-logo.png" alt="nav-logo" />
         </div>
@@ -38,8 +53,8 @@
         </div>
         </a>
       </header>
-      <main>
-        <div class="side-content">
+      <main >
+        <aside class="side-content ">
          <a href="Profile.html">
           <div class="flex ml-16 gap-4 mb-14">
             <div>
@@ -83,6 +98,16 @@
           </a>
           </div>
           <div class="flex ml-16 gap-4 mt-10">
+            <a href="create-event.html">
+                <div>
+                    <img src="./asset/png/s-create-event.png" alt="icon-task-list">
+                  </div>
+            </a>
+          <a href="create-event.html">
+            <div class="hover:text-[blue] ">Create Event</div>
+        </a>
+        </div>
+          <div class="flex ml-16 gap-4 mt-10">
             <a href="my-booking.html">
                 <div>
                     <img src="./asset/png/s-task-list-.png" alt="icon-task-list">
@@ -110,21 +135,78 @@
               <div>setting</div>
             </div>
           </a>
-          <div class="flex ml-16 gap-4 mt-10">
-            <div>
-              <img src="./asset/png/s-logout.png" alt="icon-logout">
+          <a href="#">
+            <div class="flex ml-16 gap-4 mt-10">
+              <div>
+                <img src="./asset/png/s-logout.png" alt="icon-logout">
+              </div>
+              <div class="text-red-600">Logout</div>
             </div>
-            <div class="text-red-600">Logout</div>
-          </div>
+          </a>
          
-        </div>
-        <div class="main-content">
+        </aside>
+        <div class="main-content-create">
+         <!-- update-event -->
+          <div class="hidden update-event" id="form-update-data">
+            <div class="mt-8 ml-14 text-[#373A42] font-bold text-xl">Create Event</div>
+            <form >
+           <div class="flex flex-col w-[100%] px-[54px] mt-10 ">
+
+            <div class="flex mt-4 gap-16 justify-between w-[100%] ">
+              <div class="flex flex-col w-[50%] gap-12">
+                <label for="Name">
+                  <span>Name</span><br>
+                  <input type="text" class="mt-2 h-[55px] w-full border-[2px] border-[#C1C5D0] rounded-2xl outline-none px-8 " placeholder="Input Name Event ...">
+                </label>
+                <label for="Name">
+                  <span>Location</span><br>
+                  <input type="text" class="mt-2 h-[55px] w-full border-[2px] border-[#C1C5D0] rounded-2xl outline-none px-8 " placeholder="Select Location">
+                </label>
+                <label for="Price">
+                  <span>Price</span><br>
+                  <input type="text" class="mt-2 h-[55px] w-full border-[2px] border-[#C1C5D0] rounded-2xl outline-none px-8 " placeholder="Input Price ...">
+                </label>
+               </div>
+               <div class="flex flex-col w-[50%] gap-12">
+                 <label for="Category">
+                  <span>Category</span><br>
+                  <input type="text" class="mt-2 h-[55px] w-full border-[2px] border-[#C1C5D0] rounded-2xl outline-none px-8 " placeholder="Select Category">
+                </label>
+                <label for="Date-Time-Show">
+                  <span>Date Time Show</span><br>
+                  <input type="text" class="mt-2 h-[55px] w-full border-[2px] border-[#C1C5D0] rounded-2xl outline-none px-8 " placeholder="01/01/2022">
+                </label>
+                <label for="Image">
+                  <span>Image</span><br>
+                  <input type="text" class="mt-2 h-[55px] w-full border-[2px] border-[#C1C5D0] rounded-2xl outline-none px-8 " placeholder="Chose File ...">
+                </label>
+               </div>
+             
+             </div>
+             <div class="mt-12">
+              <label for="Detail">
+               <span>Detail</span><br>
+               <input type="text" class="mt-2 h-[95px] w-full border-[2px] border-[#C1C5D0] rounded-2xl outline-none px-8 " placeholder="Input Detail ...">
+             </label>
+            </div>
+            <div class="flex self-end mt-12"><button class="h-[61px] w-[315px] bg-[#0E8388] text-[#ffff] rounded-xl">Save</button></div>
+           </div>
+         
+          </form>
+
+
+
+
+
+          </div>
+          <!-- update-event -->
+
             <div class="t-book">
                 <div class="mt-8  text-xl font-bold">Manage Event</div>
-               <div class="flex gap-4 h-[50px] w-[125px] border border[rgba(234, 241, 255, 1) rounded-[20px] 
-               justify-center items-center content-center mt-8 bg-[#9ED5C5] hover:bg-[#0E8388] cursor-auto">  
+               <a href="create-create-event.html"><div class="flex gap-4 h-[50px] w-[125px] border border[rgba(234, 241, 255, 1) rounded-[20px] 
+                justify-center items-center content-center mt-8 bg-[#9ED5C5] hover:bg-[#0E8388] cursor-auto"> </a>
               
-                <div class="text-[black] hover:text-[white] text-xs" >Create</div>       
+               <a href="create-create-event.html"> <div class="text-[black] hover:text-[white] text-xs">Create</div>     </a>  
               </div>
                </div>
            <div class="flex gap-36 self-start mt-[53px] ml-[60px] border-b-2 w-[824px] p-6">
@@ -140,10 +222,11 @@
                 <div class="text-[12px] mt-4]"> Jakarta, Indonesia</div>
                 <div class="text-[12px]">Wed, 15 Nov, 4:00 PM</div>
                 <div>
-                    <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5 hover::after:top-[100%] ">Detail</div>
-                    <a href=""> <div class="inline-block  p-4 text-[12px] text-[#3366FF] mt-2.5">Update</div>
-                     <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Delete</div>
-                     </a>
+                   
+                   <a href="detail-create-event.html"><div class="inline-block text-[12px] text-[#3366FF] mt-2.5 hover::after:top-[100%] ">Detail</div></a>
+                    <a href="update-create-event.html"><button class="inline-block  p-4 text-[12px] text-[#3366FF] mt-2.5" type="button" id="update-data">Update</button></a>
+                    <a href="#"><div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Delete</div></a>
+                     
                    </div>
             </div>
            </div>
@@ -161,11 +244,12 @@
                 <div class="text-[12px] mt-4]"> Jakarta, Indonesia</div>
                 <div class="text-[12px]">Wed, 15 Nov, 4:00 PM</div>
                 <div>
-                    <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Detail</div>
-                    <a href=""> <div class="inline-block  p-4 text-[12px] text-[#3366FF] mt-2.5">Update</div>
-                     <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Delete</div>
-                     </a>
-                   </div>
+                  
+                  <a href="detail-create-event.html"><div class="inline-block text-[12px] text-[#3366FF] mt-2.5 hover::after:top-[100%] ">Detail</div></a>
+                   <a href="update-create-event.html"><button class="inline-block  p-4 text-[12px] text-[#3366FF] mt-2.5" type="button" id="update-data">Update</button></a>
+                   <a href="#"><div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Delete</div></a>
+                    
+                  </div>
             </div>
            </div>
 
@@ -182,11 +266,12 @@
                 <div class="text-[12px] mt-4]"> Jakarta, Indonesia</div>
                 <div class="text-[12px]">Wed, 15 Nov, 4:00 PM</div>
                 <div>
-                    <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Detail</div>
-                    <a href=""> <div class="inline-block  p-4 text-[12px] text-[#3366FF] mt-2.5">Update</div>
-                     <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Delete</div>
-                     </a>
-                   </div>
+                  
+                  <a href="detail-create-event.html"><div class="inline-block text-[12px] text-[#3366FF] mt-2.5 hover::after:top-[100%] ">Detail</div></a>
+                   <a href="update-create-event.html"><button class="inline-block  p-4 text-[12px] text-[#3366FF] mt-2.5" type="button" id="update-data">Update</button></a>
+                   <a href="#"><div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Delete</div></a>
+                    
+                  </div>
             </div>
            </div>
 
@@ -203,11 +288,13 @@
                 <div class="text-[12px] mt-4]"> Jakarta, Indonesia</div>
                 <div class="text-[12px]">Wed, 15 Nov, 4:00 PM</div>
                <div>
-                <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Detail</div>
-                <a href=""> <div class="inline-block  p-4 text-[12px] text-[#3366FF] mt-2.5">Update</div>
-                 <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Delete</div>
-                 </a>
-               </div>
+                <div>
+                
+                  <a href="detail-create-event.html">  <div class="inline-block text-[12px] text-[#3366FF] mt-2.5 hover::after:top-[100%] ">Detail</div></a>
+                   <a href="update-create-event.html"><button class="inline-block  p-4 text-[12px] text-[#3366FF] mt-2.5" type="button" id="update-data">Update</button></a>
+                   <a href="#"><div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Delete</div></a>
+                    
+                  </div>
                 
             </div>
            </div>        

@@ -9,25 +9,41 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/css/style-Profil.css" />
-    <title>List-Mybooking</title>
+    <link rel="stylesheet" href="./asset/css/style-create-event.css" />
+    <title>update-create-event</title>
+
   </head>
+  <script>
+    const addTask = document.getElementById("update-data");
+const subaddTask = document.getElementById("form-update-data");
+addTask.addEventListener("click", function () {
+  if (subaddTask.style.display === "block") {
+    subaddTask.style.display = "none";
+  } else {
+    subaddTask.style.display = "block";
+  }
+});
+  </script>
   <body>
+    
     <div class="container1">
-      <header class="header p-[50px]">
+        
+      <header class="header p-[50px] z-10">
         <div class="logo">
           <img src="./asset/png/nav-logo.png" alt="nav-logo" />
         </div>
         <div class="logo">
           <nav class="nav-menu">
             <ul>
-              <li class="list-menu"><a href="index.html" style="text-decoration: none;" >Home </a></li></a>  </li>
-              <li class="list-menu"><a href="see-create-event.html">Create Event</a></li>
-              <li class="list-menu"><a href="#">Location</a></li>
+              <li class="list-menu"><a href="booking.html" style="text-decoration: none;" >Home </a></li></a>  </li>
+              <li class="list-menu">Create Event</li>
+              <li class="list-menu">Location</li>
             </ul>
           </nav>
         </div>
         
-        <div class="profil">
+        <a href="Profile.html">
+          <div class="profil">
             <div class="logo-avatar">
                 <img src="./asset/svg/avatar.svg" alt="avatar" />
               </div>
@@ -35,9 +51,11 @@
                   Jhon Thomson
                 </div>
         </div>
+        </a>
       </header>
-      <main>
-        <aside class="side-content">
+      <main >
+        <aside class="side-content ">
+         <a href="Profile.html">
           <div class="flex ml-16 gap-4 mb-14">
             <div>
               <img src="./asset/svg/avatar.svg" alt="avatar-profil">
@@ -47,12 +65,15 @@
             </div>
             
           </div>
+         </a>
+         <a href="Profile.html">
           <div class="flex ml-16 gap-4 mt-10">
-         <div>
-              <img src="./asset/png/s-profil.png" alt="icon-profil">
-            </div>
-            <div> Profile</div>
-          </div>
+            <div>
+                 <img src="./asset/png/s-profil.png" alt="icon-profil">
+               </div>
+               <div> Profile</div>
+             </div>
+         </a>
           <div class="flex ml-[100px] gap-4 mt-10">
             <div>
               <img src="./asset/png/s-card.png" alt="icon-card">
@@ -66,15 +87,16 @@
             <div>Edit profile</div>
           </div>
           <div class="flex ml-[100px] gap-4 mt-10" >
-            <div>
-              <img src="./asset/png/s-open-lock.png" alt="icon-change-password">
-            </div>
-         
+            <a href="change-password.html">
+              <div>
+                <img src="./asset/png/s-open-lock.png" alt="icon-change-password">
+              </div>
+           
+            </a>
           <a href="change-password.html">
             <div>Change Password</div>
           </a>
           </div>
-
           <div class="flex ml-16 gap-4 mt-10">
             <a href="create-event.html">
                 <div>
@@ -85,8 +107,6 @@
             <div class="hover:text-[blue] ">Create Event</div>
         </a>
         </div>
-
-
           <div class="flex ml-16 gap-4 mt-10">
             <a href="my-booking.html">
                 <div>
@@ -95,10 +115,8 @@
             </a>
           <a href="my-booking.html">
             <div class="hover:text-[blue] ">My Booking</div>
-          </a>
         </div>
-        
-          
+          </a>
           <div class="flex ml-16 gap-4 mt-10">
            <a href="my-wishlist.html">
             <div>
@@ -109,32 +127,88 @@
               <div>My Listwish</div>
           </a>
           </div>
-          <div class="flex ml-16 gap-4 mt-10">
-            <div>
-              <img src="./asset/png/s-settings.png" alt="icon-setting">
+          <a href="#">
+            <div class="flex ml-16 gap-4 mt-10">
+              <div>
+                <img src="./asset/png/s-settings.png" alt="icon-setting">
+              </div>
+              <div>setting</div>
             </div>
-            <div>setting</div>
-          </div>
-          <div class="flex ml-16 gap-4 mt-10">
-            <div>
-              <img src="./asset/png/s-logout.png" alt="icon-logout">
+          </a>
+          <a href="#">
+            <div class="flex ml-16 gap-4 mt-10">
+              <div>
+                <img src="./asset/png/s-logout.png" alt="icon-logout">
+              </div>
+              <div class="text-red-600">Logout</div>
             </div>
-            <div>Logout</div>
-          </div>
+          </a>
          
         </aside>
-        <div class="main-content">
+        <div class="main-content-create">
+         <!-- update-event -->
+          <div class="update-event" id="form-update-data">
+            <div class="mt-8 ml-14 text-[#373A42] font-bold text-xl">Update Event</div>
+            <form >
+           <div class="flex flex-col w-[100%] px-[54px] mt-10 ">
+
+            <div class="flex mt-4 gap-16 justify-between w-[100%] ">
+              <div class="flex flex-col w-[50%] gap-12">
+                <label for="Name">
+                  <span>Name</span><br>
+                  <input type="text" class="mt-2 h-[55px] w-full border-[2px] border-[#C1C5D0] rounded-2xl outline-none px-8 " placeholder="Input Name Event ...">
+                </label>
+                <label for="Name">
+                  <span>Location</span><br>
+                  <input type="text" class="mt-2 h-[55px] w-full border-[2px] border-[#C1C5D0] rounded-2xl outline-none px-8 " placeholder="Select Location">
+                </label>
+                <label for="Price">
+                  <span>Price</span><br>
+                  <input type="text" class="mt-2 h-[55px] w-full border-[2px] border-[#C1C5D0] rounded-2xl outline-none px-8 " placeholder="Input Price ...">
+                </label>
+               </div>
+               <div class="flex flex-col w-[50%] gap-12">
+                 <label for="Category">
+                  <span>Category</span><br>
+                  <input type="text" class="mt-2 h-[55px] w-full border-[2px] border-[#C1C5D0] rounded-2xl outline-none px-8 " placeholder="Select Category">
+                </label>
+                <label for="Date-Time-Show">
+                  <span>Date Time Show</span><br>
+                  <input type="text" class="mt-2 h-[55px] w-full border-[2px] border-[#C1C5D0] rounded-2xl outline-none px-8 " placeholder="01/01/2022">
+                </label>
+                <label for="Image">
+                  <span>Image</span><br>
+                  <input type="text" class="mt-2 h-[55px] w-full border-[2px] border-[#C1C5D0] rounded-2xl outline-none px-8 " placeholder="Chose File ...">
+                </label>
+               </div>
+             
+             </div>
+             <div class="mt-12">
+              <label for="Detail">
+               <span>Detail</span><br>
+               <input type="text" class="mt-2 h-[95px] w-full border-[2px] border-[#C1C5D0] rounded-2xl outline-none px-8 " placeholder="Input Detail ...">
+             </label>
+            </div>
+            <div class="flex self-end mt-12"><button class="h-[61px] w-[315px] bg-[#0E8388] text-[#ffff] rounded-xl">Save</button></div>
+           </div>
+         
+          </form>
+
+
+
+
+
+          </div>
+          <!-- update-event -->
+
             <div class="t-book">
-                <div class="mt-8  text-xl font-bold">My Booking</div>
-               <div class="flex gap-4 h-[50px] w-[125px] border border[rgba(234, 241, 255, 1) rounded-2xl 
+                <div class="mt-8  text-xl font-bold">Manage Event</div>
+               <div class="flex gap-4 h-[50px] w-[125px] border border[rgba(234, 241, 255, 1) rounded-[20px] 
                justify-center items-center content-center mt-8 bg-[#9ED5C5] hover:bg-[#0E8388] cursor-auto">  
-                <div>
-                    <img src="./asset/svg/calendar.svg" alt="icon-calendar">
-                </div>
-                <div class="text-[#3366FF] hover:text-[white] cursor-auto text-xs" >March</div>       
+              
+                <div class="text-[black] hover:text-[white] text-xs">Create</div>       
               </div>
                </div>
-        
            <div class="flex gap-36 self-start mt-[53px] ml-[60px] border-b-2 w-[824px] p-6">
             <div class="flex flex-col">
                 <div class="flex flex-col items-center h-[75px] w-[50px] justify-center border border-inherit rounded-2xl ">
@@ -147,8 +221,12 @@
                 <div class="font-bold text-[24px]"> Sights & Sounds Exhibition</div>
                 <div class="text-[12px] mt-4]"> Jakarta, Indonesia</div>
                 <div class="text-[12px]">Wed, 15 Nov, 4:00 PM</div>
-                <a href=""> <div class="text-[12px] text-[#3366FF] mt-2.5">Detail</div>
-                </a>
+                <div>
+                    <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5 hover::after:top-[100%] ">Detail</div>
+   <button class="inline-block  p-4 text-[12px] text-[#3366FF] mt-2.5" type="button" id="update-data">Update</button>
+                     <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Delete</div>
+                     
+                   </div>
             </div>
            </div>
 
@@ -164,8 +242,12 @@
                 <div class="font-bold text-[24px]"> Sights & Sounds Exhibition</div>
                 <div class="text-[12px] mt-4]"> Jakarta, Indonesia</div>
                 <div class="text-[12px]">Wed, 15 Nov, 4:00 PM</div>
-                <a href=""> <div class="text-[12px] text-[#3366FF] mt-2.5">Detail</div>
-                </a>
+                <div>
+                    <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Detail</div>
+                    <a href=""> <div class="inline-block  p-4 text-[12px] text-[#3366FF] mt-2.5">Update</div>
+                     <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Delete</div>
+                     </a>
+                   </div>
             </div>
            </div>
 
@@ -181,8 +263,12 @@
                 <div class="font-bold text-[24px]"> Sights & Sounds Exhibition</div>
                 <div class="text-[12px] mt-4]"> Jakarta, Indonesia</div>
                 <div class="text-[12px]">Wed, 15 Nov, 4:00 PM</div>
-                <a href=""> <div class="text-[12px] text-[#3366FF] mt-2.5">Detail</div>
-                </a>
+                <div>
+                    <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Detail</div>
+                    <a href=""> <div class="inline-block  p-4 text-[12px] text-[#3366FF] mt-2.5">Update</div>
+                     <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Delete</div>
+                     </a>
+                   </div>
             </div>
            </div>
 
@@ -198,8 +284,13 @@
                 <div class="font-bold text-[24px]"> Sights & Sounds Exhibition</div>
                 <div class="text-[12px] mt-4]"> Jakarta, Indonesia</div>
                 <div class="text-[12px]">Wed, 15 Nov, 4:00 PM</div>
-                <a href=""> <div class="text-[12px] text-[#3366FF] mt-2.5">Detail</div>
-                </a>
+               <div>
+                <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Detail</div>
+                <a href=""> <div class="inline-block  p-4 text-[12px] text-[#3366FF] mt-2.5">Update</div>
+                 <a href=""> <div class="inline-block text-[12px] text-[#3366FF] mt-2.5">Delete</div>
+                 </a>
+               </div>
+                
             </div>
            </div>        
         </div>
