@@ -9,20 +9,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/css/style-Profil.css" />
-    <title>List-Mybooking</title>
+    <title>create-event</title>
   </head>
   <body>
     <div class="container1">
-      <header class="header">
+      <header class="header p-[50px]">
         <div class="logo">
           <img src="./asset/png/nav-logo.png" alt="nav-logo" />
         </div>
         <div class="logo">
           <nav class="nav-menu">
             <ul>
-              <li class="list-menu"><a href="booking.html" style="text-decoration: none;" >Home </a></li></a>  </li>
-              <li class="list-menu">Create Event</li>
-              <li class="list-menu">Location</li>
+              <li class="list-menu"><a href="index.html" style="text-decoration: none;" >Home </a></li></a>  </li>
+              <li class="list-menu"><a href="see-create-event.html">Create Event</a></li>
+              <li class="list-menu"><a href="">Location</a></li>
             </ul>
           </nav>
         </div>
@@ -37,7 +37,7 @@
         </div>
       </header>
       <main>
-        <div class="side-content">
+        <div class="side-content bg-[#F1F1F1 ]">
           <div class="flex ml-16 gap-4 mb-14">
             <div>
               <img src="./asset/svg/avatar.svg" alt="avatar-profil">
@@ -49,9 +49,9 @@
           </div>
           <div class="flex ml-16 gap-4 mt-10">
          <div>
-              <img src="./asset/png/s-profil.png" alt="icon-profil">
+              <a href="Profile.html"><img src="./asset/png/s-profil.png" alt="icon-profil"></a>
             </div>
-            <div> Profile</div>
+            <div><a href="Profile.html">Profil</a></div>
           </div>
           <div class="flex ml-[100px] gap-4 mt-10">
             <div>
@@ -67,14 +67,26 @@
           </div>
           <div class="flex ml-[100px] gap-4 mt-10" >
             <div>
-              <img src="./asset/png/s-open-lock.png" alt="icon-change-password">
+             <a href="change-password.html"><img src="./asset/png/s-open-lock.png" alt="icon-change-password"></a> 
             </div>
-          <a href="change-password.html">
+          
           <a href="change-password.html">
             <div>Change Password</div>
           </a>
-          </a>
           </div>
+
+          
+          <div class="flex ml-16 gap-4 mt-10">
+            <a href="see-create-event.html">
+                <div>
+                    <img src="./asset/png/s-create-event.png" alt="icon-task-list">
+                  </div>
+            </a>
+          <a href="see-create-event.html">
+            <div class="hover:text-[blue] ">Create Event</div>
+        </a>
+        </div>
+
           <div class="flex ml-16 gap-4 mt-10">
             <a href="my-booking.html">
                 <div>
@@ -112,11 +124,13 @@
         <div class="main-content">
             <div class="t-book">
                 <div class="mt-8  text-xl font-bold">Manage Event</div>
-               <div class="flex gap-4 h-[50px] w-[125px] border border[rgba(234, 241, 255, 1) rounded-2xl 
-               justify-center items-center content-center mt-8 bg-[#EAF1FF]">  
-              
-                <div class="text-[#3366FF] text-xs" >Create</div>       
-              </div>
+              <a href="see-create-event.html">
+                <div class="flex gap-4 h-[50px] w-[125px] border border[rgba(234, 241, 255, 1) rounded-2xl 
+                justify-center items-center content-center mt-8 bg-[#9ED5C5] hover:bg-[#0E8388] cursor-auto">  
+               
+                 <div class="hover:text-black text-xs text-white cursor-default" >Create</div>       
+               </div>
+              </a>
                </div>
             <div class="flex flex-col flex justify-between gap-4 mt-[269px]">
             <div class="text-[373A42] text-2xl font-bold text-center">No tickets bought</div>
