@@ -127,7 +127,7 @@ main .main-content2{
     flex-direction: column;
     align-content: center;
     align-items: center;
-    overflow-x: auto;
+    
    
     
 }
@@ -200,7 +200,7 @@ main .main-content2{
     flex-direction: column;
     align-content: center;
     align-items: center;
-    overflow-x: auto;
+   
     
 }
 .btn-event{
@@ -226,6 +226,7 @@ main .main-content3{
     justify-content: center;
     padding-right: 50px;
     overflow-x: auto;
+    overflow: hidden;
     
 }
 .title-baner1 .text1{
