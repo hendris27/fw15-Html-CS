@@ -34,25 +34,30 @@ main{
 }
 main .main-content{
     background-color:#fffF;
-    max-width: 80%;
+    width: 80%;
     /* height: 955px; */
     margin-top: 120px;
     border-radius: 50px;
     overflow: hidden;
     display: flex;
+    padding: 50px;
     
 }
 /* styling section1 */
 .main-content .section1{
     background-color: none;
     width: 50%;
-    flex:1;
+
+   
 
 }
 /* styling section2 */
 .main-content .section2{
     background-color: none;
-    width: 50%;
+    flex: 1;
+    width: 100%;
+    margin-left: 50px;
+
 }
 ul .list-menu
 {
@@ -83,12 +88,11 @@ ul .list-menu:hover{
 /* section 1 */
 .payment-method, .payment-detail{
     font-weight: 600;
-    margin-top: 70px;
-    margin-left: 100px;
+  
 }
 
 .cb-payment{
-    margin-left: 100px;
+    
     margin-top: 30px;
     display: flex;
     gap: 20px;
@@ -112,7 +116,7 @@ ul .list-menu:hover{
 }
 div .member-card{
     margin-top: 20px;
-    margin-left: 130px;
+    margin-left: 30px;
 }
 div .icon-plus{
     margin-top: 70px;
@@ -127,17 +131,19 @@ div .icon-plus{
     height: 290px;
     border-left: 3px solid #C1C5D040;
     width: 80%;
+    padding-left: 50px;
 }
 div .pd{
     display: flex;
     justify-content: space-between;
     flex-wrap:no-wrap;
-    margin-left: 100px;
+ 
     margin-top: 15px;
     font-size: 14px;
 }
 div .h-pd{
     margin-top: 30px;
+    padding-left: 50px;
 }
 div .pd-sub-title{
     color: #0E8388;
@@ -147,7 +153,6 @@ div .pd-sub-title{
     margin-top: 50px;
     width: 80%;
     height: 55px;
-    margin-left:100px ;
     border-radius: 15px;
     box-shadow: 0px 8px 10px rgba(35, 149, 255, 0.3);
     color: #fffF;
