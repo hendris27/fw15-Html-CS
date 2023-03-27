@@ -1,64 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./asset/css/style.css">
-    <title>Halaman Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>login</title>
 </head>
+
 <body>
-    <div class="container1">
-        <div class="wrapper">
-        <div class="section-left">
-            <div class="content-logo">
-                <img class="logo" src="./asset/png/logo-avatar.png" alt="logo" />
+    <div>
+        <div class="flex w-full h-screen">
+            <aside class="hidden  md:block bg-[#0E8388] md:w-[68%] md:justify-center md:items-center md:flex">
+                <div class="">
+                    <img class="w-[450px] h-[350px]" src="./asset/png/logo-avatar.png" alt="logo" />
+                </div>
+            </aside>
+            <div class="flex flex-col md:items-center justify-center flex-1  w-[100%] px-[0px]">
+                <div>
+                    <div class="flex flex-col gap-4 md:w-full md:px-[0px] px-[10px]">
+                        <div class="flex gap-4  ">
+                            <img class="w-[47.5px] h-[50px] " src="./asset/svg/logo.svg" alt="title-login-logo">
+                            <span class="font-bold mt-[10px]">We<span style="color:#FF3D71">tick</span>
+                            </span>
+                        </div>
+
+
+                        <div class="flex flex-col">
+                            <label class="font-bold text-xl">Sign in</label></br></br>
+                            <div>
+                                <label>Hi, Welcome back to Urticket! </label>
+                            </div>
+                        </div>
+                        <div>
+                            <form class="flex  flex-col px-[0px]">
+                                <div class="flex flex-col gap-4">
+                                    <div>
+                                        <Input
+                                            class="w-full  h-[55px] outline-none px-[10px] border-box border-[1px] rounded-xl"
+                                            type="email" placeholder="Username" />
+                                    </div>
+
+                                    <div>
+                                        <Input
+                                            class="w-full  h-[55px] outline-none px-[10px] border-box border-[1px] rounded-xl"
+                                            type="email" placeholder="Email" />
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <Input
+                                                class="w-full  h-[55px] outline-none px-[10px] border-box border-[1px] rounded-xl"
+                                                type="password" placeholder="Password" />
+                                        </div>
+                                    </div>
+                                    <div class="forgot-password">
+                                        <a href="Forgot-password.html" class="f-password">Forgot Password?</a>
+
+                                    </div>
+
+                                    <div>
+                                        <button
+                                            class="w-full h-[55px] border-box border-[1px] rounded-xl outline-none  font-semibold text-xl bg-[#0E8388]">
+                                            Sign in</button>
+                                    </div>
+                                    <div class="flex items-center justify-center">
+                                        <span class="sign-with">or sign with</span>
+                                    </div>
+                                    <div class="flex gap-3 justify-center">
+                                        <div class="icon-google">
+                                            <img src="./asset/svg/btnGoogle.svg" alt="icon-google">
+                                        </div>
+                                        <div class="icon-facebook">
+                                            <img src="./asset/svg/btnFacebook.svg" alt="icon-facebook">
+                                        </div>
+                                    </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="section-right">
-            <div class="title-login">
-                <div class="title-login-logo">
-                    <img class="title-login-logo-img" src="./asset/svg/logo.svg" alt="title-login-logo">
-                    <span class="title-login-text">We<span style="color:#FF3D71">tick</span>
-                </span>
-                </div>
-                
-                
-                <div class="sub-title">
-                    <label>Sign in</label></br></br>
-                   <div class="sub-title-detail">
-                   <label>Hi, Welcome back to Urticket! </label>
-                   </div>
-                 </div>  
-                 <div>
-                 <form class="form-login">
-                    <div ><Input class="input" type="text"  placeholder="Username"/></div>
-                    <div ><Input class="input" type="email" placeholder="Email" /></div>
-                    <div ><Input class="input-password" type="password" Placeholder="password"  /></div>
-                    <div class="forgot-password">
-                    <a href="Forgot-password.html" class="f-password">Forgot Password?</a>
-                    
-                    </div>
-                    <div style="width: 100%;">
-                        <button class="btn-login"> Sign in</button>
-                    </div>
-                    <div class="login-choice">
-                        <span class="sign-with">or sign with</span>
-                    </div>
-                   <div class="icon-sign">
-                    <div class="icon-google">
-                        <img src="./asset/svg/btnGoogle.svg" alt="icon-google">
-                    </div>
-                    <div class="icon-facebook">
-                        <img src="./asset/svg/btnFacebook.svg" alt="icon-facebook">
-                    </div>
-                   </div>
-                 </form>
-                </div>
-           </div>        
-        </div>
-    </div>
     </div>
 </body>
+
 </html>
